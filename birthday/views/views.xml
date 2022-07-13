@@ -1,13 +1,13 @@
 <odoo>
   <data>
-      <record id="view_partners_form_crml" model="ir.ui.view">
-          <field name="name">view.res.partner.form.birthday</field>
-          <field name="model">res.partner</field>
-          <field name="inherit_id" ref="base.view_partner_form"/>
+      <record id="view_sales_order_auto_done_setting" model="ir.ui.view">
+          <field name="name">sale.order.form</field>
+          <field name="model">sale.order</field>
+          <field name="inherit_id" ref="sale.view_order_form"/>
           <field eval="1" name="priority"/>
           <field name="arch" type="xml">
               <data>
-                  <xpath expr="//field[@name='email']" position="after">
+                  <xpath expr="//field[@name='customer']" position="after">
                       <field name="birthday"/>
                   </xpath>
               </data>

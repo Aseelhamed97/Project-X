@@ -4,6 +4,6 @@ from odoo import models, fields, api
 
 
 class Partner(models.Model):
-      _inherit = 'res.partner'
+      _inherit = 'sale.order'
 
       birthday = fields.Datetime('Date of birth')
