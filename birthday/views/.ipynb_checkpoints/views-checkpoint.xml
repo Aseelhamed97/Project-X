@@ -7,7 +7,7 @@
           <field eval="1" name="priority"/>
           <field name="arch" type="xml">
               <data>
-                  <xpath expr="//field[@name='customer']" position="after">
+                  <xpath expr="//field[@name='partner_id']" position="after">
                       <field name="birthday"/>
                   </xpath>
               </data>
