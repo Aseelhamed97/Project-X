@@ -1,4 +1,4 @@
-<odoo>
+<!-- <odoo>
   <data>
       <record id="default_form_view_fo_1807b30e-4d04-4722-9923-89164c9d92e5" model="ir.ui.view">
           <field name="name">Default form view for x_project customization</field>
@@ -16,4 +16,4 @@
       </record>
   
   </data>
-</odoo>
+</odoo> -->
