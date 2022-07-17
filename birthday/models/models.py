@@ -4,6 +4,6 @@ from odoo import models, fields, api
 
 
 class Partner(models.Model):
-      _inherit = 'sale.order'
+      _inherit = 'x_project'
 
-      birthday = fields.Datetime('Date of birth')
+      TotalCost = fields.Decimal('Total cost')
