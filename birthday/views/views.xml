@@ -1,14 +1,14 @@
-<!-- <odoo>
+<odoo>
   <data>
-      <record id="default_form_view_fo_1807b30e-4d04-4722-9923-89164c9d92e5" model="ir.ui.view">
-          <field name="name">Default form view for x_project customization</field>
-          <field name="model">x_project</field>
-          <field name="inherit_id" ref="studio_customization.default_form_view_fo_1807b30e-4d04-4722-9923-89164c9d92e5"/>
+      <record id="view_sales_order_auto_done_setting" model="ir.ui.view">
+          <field name="name">sale.order.form</field>
+          <field name="model">sale.order</field>
+          <field name="inherit_id" ref="sale.view_order_form"/>
           <field eval="1" name="priority"/>
           <field name="arch" type="xml">
               <data>
-                  <xpath expr="//field[@name='x_name']" position="after">
-                      <field name="TotalCost"/>
+                  <xpath expr="//field[@name='partner_id']" position="after">
+                      <field name="birthday"/>
                   </xpath>
               </data>
           </field>
@@ -16,4 +16,4 @@
       </record>
   
   </data>
-</odoo> -->
+</odoo>

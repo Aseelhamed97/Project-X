@@ -1,9 +1,9 @@
-# # -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
+from odoo import models, fields, api
 
 
-# class Partner(models.Model):
-#       _inherit = 'x_project'
+class Partner(models.Model):
+      _inherit = 'sale.order'
 
-#       TotalCost = fields.Decimal('Total cost')
+      birthday = fields.Datetime('Date of birth')
