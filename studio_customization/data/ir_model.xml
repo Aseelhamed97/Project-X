@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="studio_customization.item_6a325a34-4b78-4a42-b38d-b9797c89409a" model="ir.model" context="{'studio': True}">
+    <field name="info"> Main super-class for regular database-persisted Odoo models.
+
+    Odoo models are created by inheriting from this class::
+
+        class user(Model):
+            ...
+
+    The system will later instantiate the class once per database (on
+    which the class' module is installed).
+    </field>
+    <field name="is_mail_thread" eval="True"/>
+    <field name="is_mail_activity" eval="True"/>
+    <field name="model">x_item</field>
+    <field name="name">item</field>
+    <field name="state">manual</field>
+    <field name="transient" eval="False"/>
+  </record>
+  <record id="studio_customization.project_b27c990a-83fb-471b-ab18-3d64f86bad4d" model="ir.model" context="{'studio': True}">
+    <field name="info"> Main super-class for regular database-persisted Odoo models.
+
+    Odoo models are created by inheriting from this class::
+
+        class user(Model):
+            ...
+
+    The system will later instantiate the class once per database (on
+    which the class' module is installed).
+    </field>
+    <field name="is_mail_thread" eval="True"/>
+    <field name="is_mail_activity" eval="True"/>
+    <field name="model">x_project</field>
+    <field name="name">project</field>
+    <field name="state">manual</field>
+    <field name="transient" eval="False"/>
+  </record>
+</odoo>

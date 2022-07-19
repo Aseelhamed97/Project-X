@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="studio_customization.item_group_system_c317a981-6fe6-4f62-9e9c-663ac4f1d0b0" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="studio_customization.item_6a325a34-4b78-4a42-b38d-b9797c89409a"/>
+    <field name="name">item group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="studio_customization.item_group_user_bb6cc877-f3bd-401e-b3a1-f67c502af413" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="studio_customization.item_6a325a34-4b78-4a42-b38d-b9797c89409a"/>
+    <field name="name">item group_user</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="studio_customization.project_group_system_9bd0fabb-6c32-4ec2-9b61-5e82febd1048" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="studio_customization.project_b27c990a-83fb-471b-ab18-3d64f86bad4d"/>
+    <field name="name">project group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="studio_customization.project_group_user_3abe2ca2-292c-4aed-abb8-e3d06bb7d854" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="studio_customization.project_b27c990a-83fb-471b-ab18-3d64f86bad4d"/>
+    <field name="name">project group_user</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+</odoo>

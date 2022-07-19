@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="studio_customization.default_form_view_fo_4a9010d2-6ba1-481a-95a1-843404655512" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <form>
+        <header/>
+        <sheet string="project">
+          <widget name="web_ribbon" text="Archived" bg_color="bg-danger" attrs="{'invisible': [('x_active', '=', True)]}"/>
+          <field name="x_active" invisible="1"/>
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1" placeholder="Name..."/>
+            </h1>
+          </div>
+          <group name="studio_group_4baaef">
+            <group name="studio_group_4baaef_left"/>
+            <group name="studio_group_4baaef_right"/>
+          </group>
+        </sheet>
+        <div class="oe_chatter" name="oe_chatter">
+          <field name="message_follower_ids"/>
+          <field name="message_ids"/>
+          <field name="activity_ids"/>
+        </div>
+      </form>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" eval="False"/>
+    <field name="key" eval="False"/>
+    <field name="mode">primary</field>
+    <field name="model">x_project</field>
+    <field name="name">Default form view for x_project</field>
+    <field name="priority">16</field>
+    <field name="type">form</field>
+  </record>
+  <record id="studio_customization.default_form_view_fo_71ea7f0d-43b1-4843-8d1a-6ec36889ecd0" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <form>
+        <header/>
+        <sheet string="item">
+          <widget name="web_ribbon" text="Archived" bg_color="bg-danger" attrs="{'invisible': [('x_active', '=', True)]}"/>
+          <field name="x_active" invisible="1"/>
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1" placeholder="Name..."/>
+            </h1>
+          </div>
+          <group name="studio_group_25e574">
+            <group name="studio_group_25e574_left"/>
+            <group name="studio_group_25e574_right"/>
+          </group>
+        </sheet>
+        <div class="oe_chatter" name="oe_chatter">
+          <field name="message_follower_ids"/>
+          <field name="message_ids"/>
+          <field name="activity_ids"/>
+        </div>
+      </form>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" eval="False"/>
+    <field name="key" eval="False"/>
+    <field name="mode">primary</field>
+    <field name="model">x_item</field>
+    <field name="name">Default form view for x_item</field>
+    <field name="priority">16</field>
+    <field name="type">form</field>
+  </record>
+  <record id="studio_customization.default_list_view_fo_1316629d-bb95-4eb7-9097-8ac3a190ade9" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="x_studio_sequence" widget="handle"/>
+        <field name="x_name"/>
+      </tree>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" eval="False"/>
+    <field name="key" eval="False"/>
+    <field name="mode">primary</field>
+    <field name="model">x_project</field>
+    <field name="name">Default list view for x_project</field>
+    <field name="priority">16</field>
+    <field name="type">tree</field>
+  </record>
+  <record id="studio_customization.default_list_view_fo_c3d22371-290a-4b13-8611-d4c88c16d6d7" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="x_studio_sequence" widget="handle"/>
+        <field name="x_name"/>
+      </tree>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" eval="False"/>
+    <field name="key" eval="False"/>
+    <field name="mode">primary</field>
+    <field name="model">x_item</field>
+    <field name="name">Default list view for x_item</field>
+    <field name="priority">16</field>
+    <field name="type">tree</field>
+  </record>
+  <record id="studio_customization.default_search_view__1b6172b9-45ca-44f8-9050-ad54340e627d" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <search>
+        <field name="x_name"/>
+        <separator/>
+        <filter string="Archived" name="archived_x_project" domain="[['x_active', '=', False]]"/>
+        <separator/>
+      </search>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" eval="False"/>
+    <field name="key" eval="False"/>
+    <field name="mode">primary</field>
+    <field name="model">x_project</field>
+    <field name="name">Default search view for x_project</field>
+    <field name="priority">16</field>
+    <field name="type">search</field>
+  </record>
+  <record id="studio_customization.default_search_view__544ed3aa-ec3d-4d67-8eb8-541ec8efa029" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <search>
+        <field name="x_name"/>
+        <separator/>
+        <filter string="Archived" name="archived_x_item" domain="[['x_active', '=', False]]"/>
+        <separator/>
+      </search>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" eval="False"/>
+    <field name="key" eval="False"/>
+    <field name="mode">primary</field>
+    <field name="model">x_item</field>
+    <field name="name">Default search view for x_item</field>
+    <field name="priority">16</field>
+    <field name="type">search</field>
+  </record>
+  <record id="studio_customization.odoo_studio_default__937bfaca-f2ad-49b0-92e7-08230a8f4180" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//field[@name='x_name']" position="attributes">
+          <attribute name="string">item name</attribute>
+        </xpath>
+        <xpath expr="//group[@name='studio_group_25e574_left']" position="inside">
+          <field name="x_studio_cost" string="cost"/>
+          <field name="x_studio_profit_margin" string="profit margin"/>
+        </xpath>
+      </data>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" ref="studio_customization.default_form_view_fo_71ea7f0d-43b1-4843-8d1a-6ec36889ecd0"/>
+    <field name="key" eval="False"/>
+    <field name="mode">extension</field>
+    <field name="model">x_item</field>
+    <field name="name">Odoo Studio: Default form view for x_item customization</field>
+    <field name="priority">99</field>
+    <field name="type">form</field>
+  </record>
+  <record id="studio_customization.odoo_studio_default__b10e97da-9650-470e-ac50-6235afccf79e" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//field[@name='x_name']" position="after">
+          <field name="x_studio_cost" optional="show"/>
+          <field name="x_studio_profit_margin" optional="show"/>
+        </xpath>
+      </data>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" ref="studio_customization.default_list_view_fo_c3d22371-290a-4b13-8611-d4c88c16d6d7"/>
+    <field name="key" eval="False"/>
+    <field name="mode">extension</field>
+    <field name="model">x_item</field>
+    <field name="name">Odoo Studio: Default list view for x_item customization</field>
+    <field name="priority">99</field>
+    <field name="type">tree</field>
+  </record>
+</odoo>
